@@ -804,9 +804,9 @@ while True:
         pc_specs()
     elif table == "5":
         fpsunlocker()
-    elif table == "6":
-        ultimate_rbx_fps_boost()
     elif table == "7":
+        ultimate_rbx_fps_boost()
+    elif table == "6":
         fortnite_optimizer()
     elif table == "69":
         os.system("shutdown /r /f /t 0")
