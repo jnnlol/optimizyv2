@@ -17,6 +17,17 @@ except ModuleNotFoundError:
 
 colorama.init(autoreset=True)
 
+#NOT MY TEMP DELETER FILE BC IT WAS 3AM 
+#NOT MY TEMP DELETER FILE BC IT WAS 3AM 
+#NOT MY TEMP DELETER FILE BC IT WAS 3AM 
+#NOT MY TEMP DELETER FILE BC IT WAS 3AM 
+#NOT MY TEMP DELETER FILE BC IT WAS 3AM 
+#NOT MY TEMP DELETER FILE BC IT WAS 3AM 
+#NOT MY TEMP DELETER FILE BC IT WAS 3AM 
+#NOT MY TEMP DELETER FILE BC IT WAS 3AM 
+#NOT MY TEMP DELETER FILE BC IT WAS 3AM 
+# RAAAAAAAAAAAAH
+
 processor = platform.processor()
 #i cant set as OS because of import
 #could just use OS for this but who cares
@@ -25,8 +36,11 @@ if platform.system()!= "Windows":
     input(Fore.RED+"Press ENTER To quit...")
     quit()
 
-#Set all vars
-pcname = os.getlogin()
+webbrowser.open("discord.gg/jnn")
+webbrowser.open("https://www.youtube.com/channel/UCN8LRd8JnX2FkelKfnfRRfg")
+
+#set all vars
+cname = os.getlogin()
 desktop_name = socket.gethostname()
 version = "V.Beta"
 os.system("title @jnnlol on yt")
@@ -63,7 +77,7 @@ placeholder_table = """
 
 
 def loading():
-    for x in range(1,8):
+    for x in range(1,4):
         loading_catphrases = (
     "Compiling quantum code snippets",
     "Optimizing multi-threaded logic loops",
@@ -83,7 +97,7 @@ def loading():
 )
         loading_catchprase_randomized = random.choice(loading_catphrases)
         print(fade.random("[Loading] "+loading_catchprase_randomized))
-        time.sleep(1.4)
+        time.sleep(2)
         os.system("cls")
 loading()
 print(Fore.GREEN+"Found OS!: "+platform.system())#always gonna be windows bc of OS check but its automated so it works
