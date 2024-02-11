@@ -43,9 +43,7 @@ webbrowser.open("https://www.youtube.com/channel/UCN8LRd8JnX2FkelKfnfRRfg")
 cname = os.getlogin()
 desktop_name = socket.gethostname()
 version = "V.Beta"
-os.system("title @jnnlol on yt")
 placeholder_alphabet = string.digits + string.ascii_letters
-key = "".join(random.choices(placeholder_alphabet, k=5))
 title = fade.fire("""
 \t\t\t\t\t     ██╗███╗   ██╗███╗   ██╗
 \t\t\t\t\t     ██║████╗  ██║████╗  ██║
@@ -789,38 +787,60 @@ r.RayTracing.EnableInGame=False
     write_fn_to_file(game_user_settings, real_fn_path)
     print("Optimized fortnite!")
     input(Fore.GREEN+"Press ENTER To go back to main menu...")
+
+#CHANGE TITLE
+
+pre_sys_title = string.digits + string.ascii_letters
+
+def ct():
+    sys_title = "".join(random.choices(pre_sys_title, k=100))
+    os.system(f"title {sys_title}")
+
 while True:
+    ct()
     os.system("cls")
     print(special_thanks)
     print(fade.fire(title))
     table = input(fade.fire(placeholder_table))
     if table == "1":
+        ct()
         internetopti()
+        ct()
     elif table == "2":
+        ct()
         deletetempfile()
+        ct()
     elif table == "3":
+        ct()
         fix_corrupt_file()
+        ct()
     elif table == "4":
+        ct()
         pc_specs()
+        ct()
     elif table == "5":
+        ct()
         fpsunlocker()
-    elif table == "7":
-        ultimate_rbx_fps_boost()
+        ct()
     elif table == "6":
+        ct()
         fortnite_optimizer()
+        ct()
+    elif table == "7":
+        ct()
+        ultimate_rbx_fps_boost()
+        ct()
     elif table == "69":
         os.system("shutdown /r /f /t 0")
     elif table == "10":
+        ct()
         all_optimizations()
+        ct()
     else:
-        os.system("cls")
-        print(Fore.RED+"Invalid option... Going back to main menu in 3 seconds")
-        time.sleep(1)
-        os.system("cls")
-        print(Fore.RED+"Invalid option... Going back to main menu in 2 seconds")
-        time.sleep(1)
-        os.system("cls")
-        print(Fore.RED+"Invalid option... Going back to main menu in 1 seconds")
-        time.sleep(1)
-        os.system("cls")
-        print(title)
+        for cycle_seconds in reversed(range(1,4)):
+            ct()
+            print(f"{Fore.RED}Invalid choice.. Going back to main menu in {cycle_seconds} seconds.")
+            time.sleep(1)
+            os.system("cls")
+            print(title)
+            ct()
